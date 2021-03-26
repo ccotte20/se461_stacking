@@ -1,0 +1,31 @@
+project (project3) {
+	exename = stacking
+	
+	specific (make) {
+		compile_flags += -std=c++11
+	}
+	
+	Source_Files {
+		Driver.cpp
+	}
+	
+	Template_Files {
+		Array.cpp
+		Dynamic_Array.cpp
+		Stack.cpp
+	}
+	
+	Header_Files {
+		Array.h
+		Dynamic_Array.h
+		Stack.h
+	}
+	
+	Inline_Files {
+		Array.inl
+		Dynamic_Array.inl
+		Stack.inl
+	}
+}
+
+// to use 'thomas% mwc.pl -type make' then 'thomas% make' then 'a1'
