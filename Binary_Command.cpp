@@ -18,8 +18,11 @@ Binary_Command::execute(Stack<int> &s)
 {
 	int num1(0), num2(0), num3(0);
 	
-	num2 = s->pop();
-	num1 = s->pop();
+	num2 = s->top();
+	s->pop();
+	
+	num1 = s->top();
+	s->pop();
 	
 	num3 = this->evaluate(num1, num2);
 	

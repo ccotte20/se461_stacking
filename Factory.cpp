@@ -2,14 +2,14 @@
 // I pledge that I have neither given nor 
 // received any help on this assignment.
 // Clark Otte
-#include "Command.h"
+#include "Factory.h"
 
-Command::Command(void)
+Factory::Factory(void)
 {
     
 }
 
-Command::~Command(void)
+Factory::~Factory (void)
 {
     
 }
