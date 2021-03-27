@@ -8,6 +8,7 @@
 
 #include "Binary_Command.h"
 
+// Dr. Ryan: Number Command should not inherit from Binary Command as it is not a type of Binary Command.
 class Number_Command : public Binary_Command 
 {
 	public:
@@ -16,6 +17,7 @@ class Number_Command : public Binary_Command
     
 		virtual bool execute(Stack<int> &s);
 		virtual int priority();
+		// Dr. Ryan: Number Command should not inherit from Binary Command as it is not a type of Binary Command.
 		virtual int evaluate(int n1, int n2);
 	
 	private:

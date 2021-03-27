@@ -26,6 +26,7 @@ bool Parenthesis_Command::execute(Stack<int> &s)
 	return true;
 }
 
+// Dr. Ryan: Does a parenthesis really need an evaluate?
 int Parenthesis_Command::evaluate(int n1,int n2)
 {
 	return (n1);

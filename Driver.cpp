@@ -36,3 +36,5 @@ bool infixToPostfix(std::string s)
 I anticipated having more time during this week on my trip to work on it, however the trip has been busier 
 than anticipated. I have been trying my best to catch up on work from my previous absences in this class and 
 others and I will work as best I can on this during the following week. - Apologies, Clark */
+
+// Dr. Ryan: Let's make sure this next week we get the necessary help to ensure that we find success on this assignment.

@@ -8,6 +8,7 @@
 
 #include "Binary_Command.h"
 
+// Dr. Ryan: Parenthesis Command should not inherit from Binary Command as it is not a type of Binary Command.
 class Parenthesis_Command : public Binary_Command 
 {
 	public:
@@ -16,6 +17,7 @@ class Parenthesis_Command : public Binary_Command
     
 		virtual int priority();
 		virtual bool execute(Stack<int> &s);
+		// Dr. Ryan: Parenthesis Command should not inherit from Binary Command as it is not a type of Binary Command.
 		virtual int evaluate(int n1, int n2);
 };
 #endif

@@ -32,6 +32,7 @@ int Number_Command::priority()
     	return -1;
 }
 
+// Dr. Ryan: Why would the Number Command have an evaluate method?
 int Number_Command::evaluate(int n1,int n2)
 {
 	return (n1 + n2);

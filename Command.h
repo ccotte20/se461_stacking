@@ -11,6 +11,7 @@ public Command
 {
 	Command(void);
 	
+	// Dr. Ryan: Why the lower case 'c' here?
 	virtual ~command() = 0;
 	
 	virtual int priority() = 0;
