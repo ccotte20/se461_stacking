@@ -7,6 +7,16 @@ project (project3) {
 	
 	Source_Files {
 		Driver.cpp
+		Add_Command.cpp
+		Binary_Command.cpp
+		Divide_Command.cpp
+		Factory.cpp
+		Modulus_Command.cpp
+		Multiply_Command.cpp
+		Number_Command.cpp
+		Parenthesis_Command.cpp
+		Stack_Factory.cpp
+		Subtract_Command.cpp
 	}
 	
 	Template_Files {
@@ -19,6 +29,17 @@ project (project3) {
 		Array.h
 		Dynamic_Array.h
 		Stack.h
+		Add_Command.h
+		Binary_Command.h
+		Divide_Command.h
+		Factory.h
+		Modulus_Command.h
+		Multiply_Command.h
+		Number_Command.h
+		Parenthesis_Command.h
+		Parenthesis_Command.h
+		Stack_Factory.h
+		Subtract_Command.h
 	}
 	
 	Inline_Files {
