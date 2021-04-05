@@ -6,9 +6,11 @@
 #ifndef _NUMBER_COMMAND_H
 #define _NUMBER_COMMAND_H
 
-#include "Binary_Command.h"
+#include "Command.h"
 
-class Number_Command : public Binary_Command 
+// Dr. Ryan: Number Command should not inherit from Binary Command as it is not a type of Binary Command.
+// Fixed: Inherits from Command
+class Number_Command : public Command
 {
 	public:
 		Number_Command(int n);
@@ -16,7 +18,8 @@ class Number_Command : public Binary_Command
     
 		virtual bool execute(Stack<int> &s);
 		virtual int priority();
-		virtual int evaluate(int n1, int n2);
+		// Dr. Ryan: Number Command should not inherit from Binary Command as it is not a type of Binary Command.
+		// Fixed: Removed inheritance and evaluate method
 	
 	private:
 		Number_Command(void);

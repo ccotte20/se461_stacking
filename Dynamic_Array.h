@@ -35,7 +35,7 @@ public:
    * @param[in]      length        Initial size
    * @param[in]      fill       The fill value.
    */
-  Dynamic_Array (size_t, length, T fill);
+  Dynamic_Array (size_t length, T fill);
 
   /// Destructor.
   ~Dynamic_Array (void);

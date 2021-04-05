@@ -6,9 +6,11 @@
 #ifndef _PARENTHESIS_COMMAND_H
 #define _PARENTHESIS_COMMAND_H
 
-#include "Binary_Command.h"
+#include "Command.h"
 
-class Parenthesis_Command : public Binary_Command 
+// Dr. Ryan: Parenthesis Command should not inherit from Binary Command as it is not a type of Binary Command.
+// Fixed: Changed inheritance to Command
+class Parenthesis_Command : public Command 
 {
 	public:
 		Parenthesis_Command(void);
@@ -16,6 +18,7 @@ class Parenthesis_Command : public Binary_Command
     
 		virtual int priority();
 		virtual bool execute(Stack<int> &s);
-		virtual int evaluate(int n1, int n2);
+		// Dr. Ryan: Parenthesis Command should not inherit from Binary Command as it is not a type of Binary Command.
+		// Fixed: Changed inheritance and removed evaluate function
 };
 #endif

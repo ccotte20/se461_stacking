@@ -19,9 +19,9 @@ class Factory
     
     public:
     
-        Factory (void);
+        Factory (void) {}
     
-        virtual ~Factory (void)=0;
+        virtual ~Factory (void) {}
     
         virtual Number_Command * createNumberCommand (int num)=0;
     

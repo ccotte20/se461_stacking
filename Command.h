@@ -7,14 +7,17 @@
 
 #include "Stack.h"
 
-public Command
+class Command
 {
-	Command(void);
+	public:
+		Command(void) {}
 	
-	virtual ~command() = 0;
+		// Dr. Ryan: Why the lower case 'c' here?
+		// Fixed: Changed Case
+		virtual ~Command() {}
 	
-	virtual int priority() = 0;
+		virtual int priority() = 0;
 	
-	virtual void execute(Stack<int> & s) = 0;
+		virtual bool execute(Stack<int> & s) = 0;
 };
 #endif

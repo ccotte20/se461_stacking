@@ -6,11 +6,10 @@ project (project3) {
 	}
 	
 	Source_Files {
-		Driver.cpp
 		Add_Command.cpp
 		Binary_Command.cpp
 		Divide_Command.cpp
-		Factory.cpp
+		Driver.cpp
 		Modulus_Command.cpp
 		Multiply_Command.cpp
 		Number_Command.cpp
@@ -26,19 +25,19 @@ project (project3) {
 	}
 	
 	Header_Files {
-		Array.h
-		Dynamic_Array.h
-		Stack.h
 		Add_Command.h
+		Array.h
 		Binary_Command.h
+		Command.h
 		Divide_Command.h
+		Dynamic_Array.h
 		Factory.h
 		Modulus_Command.h
 		Multiply_Command.h
 		Number_Command.h
 		Parenthesis_Command.h
-		Parenthesis_Command.h
 		Stack_Factory.h
+		Stack.h
 		Subtract_Command.h
 	}
 	

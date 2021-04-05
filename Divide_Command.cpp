@@ -25,7 +25,7 @@ int Divide_Command::evaluate(int n1,int n2)
 {
 	if(n2==0)
 	{
-		std::cout<<"Divide by 0"<<endl;
+		std::cout<<"Divide by 0"<<std::endl;
 		throw std::logic_error("Divide by 0");
 	}
 	return (n1 / n2);
