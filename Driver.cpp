@@ -21,7 +21,7 @@ void priorityCheck(Stack<Command *> & temp, Dynamic_Array<Command *> & postfix, 
 	}
 	else
 	{
-		Command * tempcmd= temp.top();
+		Command * tempcmd = temp.top();
         
    		if(cmd->priority() == 0)
 		{
@@ -229,12 +229,12 @@ bool areParanthesesBalanced(std::string exp)
 int main()
 {
 	std::string infix;
-	while(infix != "q")
+	while(infix != "QUIT")
 	{
-		std::cout<<"Give the expression or type q to quit"<<std::endl;
+		std::cout<<"Give the expression or type QUIT"<<std::endl;
 		std::cin>>infix;
 		
-		if(infix != "q")
+		if(infix != "QUIT")
 		{
 			if(areParanthesesBalanced(infix))
 			{
@@ -259,6 +259,7 @@ int main()
 						{
 							check=false;
 						}
+						delete postfix[i];
 					}
 					if(check==false)
 					{

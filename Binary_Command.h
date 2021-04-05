@@ -25,4 +25,4 @@ class Binary_Command: public Command
         virtual int priority()=0;
 };
 
-#endif /* defined(____Binary_Op_Command__) */
+#endif

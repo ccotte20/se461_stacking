@@ -6,7 +6,7 @@
 // Stack
 //
 
-#define DEFAULT_RESIZE 5
+#define DEFAULT_RESIZE 1
 
 // Dr. Ryan: We need to leverage our Array here - Composition.
 // Fixed: initialized Dynamic_Array array
@@ -87,8 +87,6 @@ const Stack <T> & Stack <T>::operator = (const Stack & rhs)
 template <typename T>
 void Stack <T>::clear (void)
 {
-	data_.resize(0);
-	data_.resize(DEFAULT_RESIZE);
-	top_=-1;
-	size_=0;
+	while(top_>0)
+        pop();
 }

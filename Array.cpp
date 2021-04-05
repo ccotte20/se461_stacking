@@ -3,7 +3,7 @@
 // received any help on this assignment.
 // Clark Otte
 
-#define DEFAULT_SIZE 10
+#define DEFAULT_SIZE 0
 
 // Dr. Ryan: If this is your Base Array you wouldn't want a Max Size here.
 // Fixed: Moved Max size to dynamic array
